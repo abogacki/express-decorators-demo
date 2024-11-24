@@ -1,5 +1,5 @@
 {
-  "name": "express-demo",
+  "name": "express",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/express/src",
   "projectType": "application",
@@ -10,15 +10,15 @@
       "defaultConfiguration": "development",
       "dependsOn": ["build"],
       "options": {
-        "buildTarget": "express-demo:build",
+        "buildTarget": "express:build",
         "runBuildTargetDependencies": false
       },
       "configurations": {
         "development": {
-          "buildTarget": "express-demo:build:development"
+          "buildTarget": "express:build:development"
         },
         "production": {
-          "buildTarget": "express-demo:build:production"
+          "buildTarget": "express:build:production"
         }
       }
     }

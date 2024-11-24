@@ -1,5 +1,5 @@
 export default {
-  displayName: 'express-demo',
+  displayName: 'express',
   preset: '../../jest.preset.js',
   testEnvironment: 'node',
   transform: {
