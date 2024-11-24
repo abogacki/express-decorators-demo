@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@express-demo/decorators": ["decorators/src/index.ts"]
+      "@express-demo/decorators": ["libs/decorators/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
