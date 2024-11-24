@@ -1,0 +1,26 @@
+{
+  "name": "express-demo",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/express-demo/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "dependsOn": ["build"],
+      "options": {
+        "buildTarget": "express-demo:build",
+        "runBuildTargetDependencies": false
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "express-demo:build:development"
+        },
+        "production": {
+          "buildTarget": "express-demo:build:production"
+        }
+      }
+    }
+  }
+}
